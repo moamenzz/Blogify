@@ -1,4 +1,8 @@
-const whitelist = ["http://localhost:5173"];
+const whitelist = [
+  "http://localhost:5173",
+  "https://blogify-jdc3.onrender.com",
+  "https://blogify319.vercel.app/",
+];
 
 export const corsConfig = {
   origin: (origin, callback) => {
