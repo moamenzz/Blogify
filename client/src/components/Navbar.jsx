@@ -41,7 +41,7 @@ const Navbar = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="navbar bg-base-100 ">
+    <div className="navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -174,6 +174,11 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a>Settings</a>
+                </li>
+                <li>
+                  <Link to="/create-post" className="justify-between">
+                    Create a Post
+                  </Link>{" "}
                 </li>
                 <li>
                   <a onClick={handleLogout}>Logout</a>

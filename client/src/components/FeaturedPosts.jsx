@@ -11,15 +11,6 @@ const FeaturedPosts = () => {
     fetchFeaturedPosts();
   }, []);
 
-  console.log(featuredPosts);
-
-  if (isLoading)
-    return (
-      <div className="flex justify-center">
-        <Loader />
-      </div>
-    );
-
   if (!featuredPosts || featuredPosts.length === 0)
     return (
       <div>
@@ -29,7 +20,11 @@ const FeaturedPosts = () => {
       </div>
     );
 
-  return (
+  return isLoading ? (
+    <div className="flex justify-center">
+      <Loader className="animate-spin" />
+    </div>
+  ) : (
     <div className="pt-16 max-w-7xl mx-auto">
       <div>
         <h2 className="text-2xl font-semibold pb-8">Featured Posts</h2>

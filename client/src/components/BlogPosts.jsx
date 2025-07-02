@@ -47,16 +47,6 @@ const BlogPosts = () => {
     fetchPosts(currentPage);
   }, []);
 
-  console.log(posts);
-
-  if (isLoading) {
-    return (
-      <div className="flex justify-center">
-        <Loader />
-      </div>
-    );
-  }
-
   if (!posts || posts.length === 0) {
     return (
       <div className="text-center px-10 font-semibold text-2xl text-gray-600">
