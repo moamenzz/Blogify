@@ -65,3 +65,44 @@ This project challenged and taught me:
 🌐 [Click here to view the app](https://blogify319.vercel.app)
 
 ---
+
+## 🧪 Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/moamenzz/blogify.git
+
+# Navigate to project folder
+cd blogify
+
+# Install dependencies for both frontend and backend
+cd client && npm install
+cd ../server && npm install
+
+# Add .env files in both folders as per .env.example
+
+# Run the project
+npm start
+
+```
+
+## 🤫 .env.example
+
+client .env:
+
+```
+VITE_BACKEND_API=
+```
+
+server .env:
+
+```
+PORT=
+NODE_ENV=
+MONGODB_URI=
+ACCESS_TOKEN_SECRET=
+REFRESH_TOKEN_SECRET=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+```
